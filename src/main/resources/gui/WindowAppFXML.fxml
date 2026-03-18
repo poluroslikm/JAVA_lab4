@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WindowApp">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <children>
+        <!-- Заголовок -->
+        <Label text="Вариант 13: Чередование +/-" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+        <!-- Поле для ввода входного файла -->
+        <VBox spacing="5.0" prefWidth="460.0">
+            <Label text="Входной файл:" />
+            <TextField fx:id="inputFileField" promptText="test/input01.txt" prefWidth="460.0" />
+        </VBox>
+
+        <!-- Поле для ввода выходного файла -->
+        <VBox spacing="5.0" prefWidth="460.0">
+            <Label text="Выходной файл:" />
+            <TextField fx:id="outputFileField" promptText="output/result01.txt" prefWidth="460.0" />
+        </VBox>
+
+        <!-- Кнопка обработки -->
+        <Button fx:id="processButton" text="Обработать" onAction="#handleProcess" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+
+        <!-- Разделитель -->
+        <Separator prefWidth="460.0" />
+
+        <!-- Область для вывода результата -->
+        <VBox spacing="5.0" prefWidth="460.0" VBox.vgrow="ALWAYS">
+            <Label text="Результат:" />
+            <TextArea fx:id="resultArea" editable="false" prefHeight="150.0" wrapText="true" VBox.vgrow="ALWAYS" />
+        </VBox>
+
+        <!-- Статус бар -->
+        <Label fx:id="statusLabel" text="Готов к работе" style="-fx-text-fill: gray;" />
+    </children>
+</VBox>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="JAVA_lab4b:jar">
+    <output-path>$PROJECT_DIR$/output/artifacts/JAVA_lab4b_jar</output-path>
+    <root id="root">
+      <element id="archive" name="JAVA_lab4b.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="JAVA_lab4b" />
+      </element>
+    </root>
+  </artifact>
+</component>
